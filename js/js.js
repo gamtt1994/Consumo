@@ -1,4 +1,4 @@
-function enviar() {
+function enviar1() {
     var anofac = document.getElementById('año').value;
     var mesfac = document.getElementById('mes').value;
     var dato = document.getElementById('dato1').value;
