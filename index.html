@@ -9,6 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
 
+    <script src="./js/cambio.js"> </script>
+    <script src="./js/js.js"></script>
     
     <script src="./js/Chart-bundle.js"> </script>
     <script src="./js/Chart-bundle-min.js"> </script>
@@ -17,13 +19,13 @@
     <link rel="stylesheet" type="text/css" href="./css/Chart.css">
     <link rel="stylesheet" type="text/css" href="./css/Chart-min.css">
 
-    <script src="./js/cambio.js"> </script>
-    <script src="./js/js.js"></script>
+   
     
     <script src="./js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  
     
     <title>AGENDA</title>
 </head>
@@ -67,8 +69,8 @@
                 <div class="col">
 
                     <div>
-                        <label class="form-check-label">Seleccione el ultimo mes del periodo de facturación</label>
-                        <select id="mes" start="1" class="form-control" onchange="cambiomes()">
+                        <label class="form-check-label"><strong>Seleccione el ultimo mes del periodo de facturación</strong></label>
+                        <select id="mes" start="1" class="custom-select mes" onchange="cambiomes()" >
                             <option value=1>Enero</option>
                             <option value=2>Febrero</option>
                             <option value=3>Marzo</option>
@@ -82,6 +84,11 @@
                             <option value=11>Noviembre</option>
                             <option value=12>Diciembre</option>
                         </select>
+                    </div>
+                    <div>
+                        <div>
+                            <strong>Seleccione los meses a comparar</strong>
+                        </div>
                     </div>
                     <div>
                         <div class="form-check">
@@ -157,14 +164,14 @@
                     </div>
                     <div>
                         <div>
-                            <label class="form-check-label" id="lectura">Lectura Hoy </label>
+                            <label class="form-check-label" id="lectura"><strong>Lectura Hoy </strong></label>
                             <input id="lecturahoy" type="number" class="form-control" />
                         </div>
 
                     </div>
                     <div>
                         <div>
-                            <label class="form-check-label" id="lectura">Lectura A </label>
+                            <label class="form-check-label" id="lectura"><strong>Lectura A</strong> </label>
                             <input id="lecturaa" type="number" class="form-control" />
                         </div>
 
@@ -174,12 +181,17 @@
 
                 <div class="col">
                     <div>
-                        <label class="form-check-label">Seleccione el ultimo año del periodo de facturación</label>
+                        <label class="form-check-label"><strong>Seleccione el ultimo año del periodo de facturación</strong></label>
                         <select id="año" start="1" class="form-control" onchange="cambioaño()">
                             <option value=2020>2020</option>
                             <option value=2019>2019</option>
                             <option value=2018>2018</option>
                         </select>
+                    </div>
+                    <div>
+                        <div>
+                            <strong>.</strong>
+                        </div>
                     </div>
                     <div>
                         <div class="form-check">
@@ -260,7 +272,7 @@
                     </div>
                     <div>
                         <div>
-                            <label class="form-check-label" id="lecturab">Lectura B </label>
+                            <label class="form-check-label" ><strong>Lectura B </strong></Lectura></label>
                             <input id="lecturab" type="number" class="form-control" />
                         </div>
 

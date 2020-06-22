@@ -1,3 +1,8 @@
 .fondo_azul{
     background-color: royalblue;
 }
+
+#mes , #año, #lecturahoy , #lecturaa, #lecturab{
+    background-color:  rgba(255,164,032);
+    border:1px solid;
+}
