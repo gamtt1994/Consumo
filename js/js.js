@@ -13,6 +13,9 @@ function enviar1() {
     var dato10 = document.getElementById('dato10').value;
     var dato11 = document.getElementById('dato11').value;
     var dato12 = document.getElementById('dato12').value;
+    var lecturahoy = document.getElementById('lecturahoy').value;
+    var lecturaa = document.getElementById('lecturaa').value;
+    var lecturab = document.getElementById('lecturab').value;
 
     var valor = document.getElementById('valor1')
     
@@ -75,7 +78,7 @@ function enviar1() {
 
     var tot = $('#total');
     tot.val(0);
-    $('.form-check-input,#consumo').each(function () {
+    $('.form-check-input,#lecturab').each(function () {
         if ($(this).hasClass('form-check-input')) {
             tot.val(($(this).is(':checked') ? parseFloat($(this).attr('value')) : 0) + parseFloat(tot.val()));
         }

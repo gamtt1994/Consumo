@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="col">
                     <div>
-                        <label class="form-check-label">Seleccione el mes</label>
+                        <label class="form-check-label">Seleccione el mes del periodo de facturación</label>
                         <select id="mes" start="1" class="form-control" onchange="cambiomes()">
                             <option value=1>Enero</option>
                             <option value=2>Febrero</option>
@@ -155,8 +155,15 @@
                     </div>
                     <div>
                         <div>
+                            <label class="form-check-label" id="lectura">Lectura Hoy </label>
+                            <input id="lecturahoy" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div>
                             <label class="form-check-label" id="lectura">Lectura A </label>
-                            <input id="valorlectura" type="number" class="form-control" />
+                            <input id="lecturaa" type="number" class="form-control" />
                         </div>
 
                     </div>
@@ -165,7 +172,7 @@
 
                 <div class="col">
                     <div>
-                        <label class="form-check-label">Seleccione el año</label>
+                        <label class="form-check-label">Seleccione el año del periodo de facturación</label>
                         <select id="año" start="1" class="form-control" onchange="cambioaño()">
                             <option value=2020>2020</option>
                             <option value=2019>2019</option>
@@ -252,7 +259,7 @@
                     <div>
                         <div>
                             <label class="form-check-label" id="lecturab">Lectura B </label>
-                            <input id="consumo" type="number" class="form-control" />
+                            <input id="lecturab" type="number" class="form-control" />
                         </div>
 
                     </div>
