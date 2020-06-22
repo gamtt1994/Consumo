@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="./js/cambio.js"> </script>
+    <script src="./js/js.js"></script>
+    
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <title>AGENDA</title>
+</head>
+
+<body>
+    <div class="fondo_azul">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark fondo_verde">
+                <a class="navbar-brand" href="#">Seingel</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Calcular Consumo</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="clearfix py-4 border-bottom">
+            <h3>Consumo de Energía</h3>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <label class="form-check-label">Ingresar la fecha del mes</label>
+                        <select id="mes" start="1" class="form-control" onchange="cambiomes()">
+                            <option value=1>Enero</option>
+                            <option value=2>Febrero</option>
+                            <option value=3>Marzo</option>
+                            <option value=4>Abril</option>
+                            <option value=5>Mayo</option>
+                            <option value=6>Junio</option>
+                            <option value=7>Julio</option>
+                            <option value=8>Agosto</option>
+                            <option value=9>Setiembre</option>
+                            <option value=10>Octubre</option>
+                            <option value=11>Noviembre</option>
+                            <option value=12>Diciembre</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor1" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes1">Mes 1 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato1" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor3" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes3">Mes 3 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato3" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor5" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes5">Mes 5 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato5" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor7" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes7">Mes 7 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato7" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor9" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes9">Mes 9 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato9" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor11" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes11">Mes 11 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato11" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div>
+                            <label class="form-check-label" id="lectura">Lectura A </label>
+                            <input id="valorlectura" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div>
+                        <label class="form-check-label">Ingresar el año</label>
+                        <select id="año" start="1" class="form-control" onchange="cambioaño()">
+                            <option value=2020>2020</option>
+                            <option value=2019>2019</option>
+                            <option value=2018>2018</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor2" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes2" >Mes 2 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato2" type="number" class="form-control" value="0"/>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor4" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes4">Mes 4 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato4" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor6" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes6">Mes 6 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato6" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor8" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes8">Mes 8 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato8" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor10" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes10">Mes 10 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato10" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor12" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes12">Mes 12 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato12" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div>
+                            <label class="form-check-label" id="lecturab">Lectura B </label>
+                            <input id="consumo" type="number" class="form-control" />
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <button onclick="enviar()">Calcular consumo</button>
+            <input id="total" type="text" placeholder="0.00" readonly />
+        </form>
+    </div>
+
+    <div class="container">
+        <canvas id="myChart" width="400" height="200"></canvas>
+    </div>
+
+
+    <script>
+        
+    </script>
+
+
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+ 
+ $(document).on('click keyup','.mis-checkboxes,.mis-adicionales',function() {
+   calcular();
+ });
+
+});
+
+function calcular() {
+  var tot = $('#total');
+  tot.val(0);
+  $('.mis-checkboxes,.mis-adicionales').each(function() {
+    if($(this).hasClass('mis-checkboxes')) {
+      tot.val(($(this).is(':checked') ? parseFloat($(this).attr('tu-attr-precio')) : 0) + parseFloat(tot.val()));  
+    }
+    else {
+      tot.val(parseFloat(tot.val()) + (isNaN(parseFloat($(this).val())) ? 0 : parseFloat($(this).val())));
+    }
+  });
+  var totalParts = parseFloat(tot.val()).toFixed(2).split('.');
+  tot.val('$' + totalParts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '.' +  (totalParts.length > 1 ? totalParts[1] : '00'));  
+}
+    </script>
+    <ul>
+        <li><input type="checkbox" tu-attr-precio="3.5" class="mis-checkboxes" /> Elemento #1</li>
+        <li><input type="checkbox" tu-attr-precio="7.5" class="mis-checkboxes" /> Elemento #2</li>
+        <li><input type="checkbox" tu-attr-precio="5.5" class="mis-checkboxes" /> Elemento #3</li>
+        <li><input type="checkbox" tu-attr-precio="4.5" class="mis-checkboxes" /> Elemento #4</li>
+      </ul>
+      
+      <label><strong>Servicio adicional</strong><label>
+      <div>
+        <input type="text" class="mis-adicionales" placeholder="Precio del servicio"/>
+      </div>
+      
+      <label><strong>Total</strong><label>
+      <div>
+        <input id="total" type="text" placeholder="0.00"/>
+      </div>
+</body>
+</html>
+
+
+
+<div class="container">
+  <div class="container-sm">
+      <table>
+          <tbody>
+              <tr>
+                  <td>
+                      <h2>Fecha - mes</h2>
+                  </td>
+
+                  <td>
+                      <select id="mes" start="1">
+                          <option value=1>Enero</option>
+                          <option value=2>Febrero</option>
+                          <option value=3>Marzo</option>
+                          <option value=4>Abril</option>
+                          <option value=5>Mayo</option>
+                          <option value=6>Junio</option>
+                          <option value=7>Julio</option>
+                          <option value=8>Agosto</option>
+                          <option value=9>Setiembre</option>
+                          <option value=10>Octubre</option>
+                          <option value=11>Noviembre</option>
+                          <option value=12>Diciembre</option>
+                      </select>
+
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2>Fecha año:</h2>
+                  </td>
+                  <td><select id="año" start="1">
+                          <option value=2020>2020</option>
+                          <option value=2019>2019</option>
+                          <option value=2018>2018</option>
+                      </select></td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes1">Mes 1</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor1" class="mis-checkboxes" tu-attr-precio="" />
+                      <input id="dato1" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes2">Mes 2</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor2" class="mis-checkboxes" />
+                      <input id="dato2" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes3">Mes 3</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor3" class="mis-checkboxes" />
+                      <input id="dato3" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes4">Mes 4</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor4" class="mis-checkboxes" />
+                      <input id="dato4" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes5">Mes 5</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor5" class="mis-checkboxes" />
+                      <input id="dato5" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes6">Mes 6</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor6" class="mis-checkboxes" />
+                      <input id="dato6" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes7">Mes 7</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor7" class="mis-checkboxes" />
+                      <input id="dato7" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes8">Mes 8</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor8" class="mis-checkboxes" />
+                      <input id="dato8" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes9">Mes 9</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor9" class="mis-checkboxes" />
+                      <input id="dato9" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes10">Mes 10</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor10" class="mis-checkboxes" />
+                      <input id="dato10" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes11">Mes 11</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor11" class="mis-checkboxes" />
+                      <input id="dato11" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2 id="mes12">Mes 12</h2>
+                  </td>
+                  <td>
+                      <input type="checkbox" id="valor12" class="mis-checkboxes" />
+                      <input id="dato12" type="number" />
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2>Lectura Hoy</h2>
+                  </td>
+                  <td><input type="number" /> </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2>Lectura Actual A</h2>
+                  </td>
+                  <td><input id="lecturaa" type="number" /> </td>
+
+              </tr>
+              <tr>
+                  <td>
+                      <h2>Lectura Actual B</h2>
+                  </td>
+                  <td><input id="lecturab" class="consumo" type="number" /> </td>
+
+              </tr>
+              <tr>
+                  <td colspan="2"><button onclick="enviar()">Enviar</button></td>
+              </tr>
+              <tr>
+                  <td>
+                      <input id="total" type="text" placeholder="0.00" />
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+  </div>
+</div>
