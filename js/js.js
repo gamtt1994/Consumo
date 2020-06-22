@@ -16,6 +16,8 @@ function enviar1() {
     var lecturahoy = document.getElementById('lecturahoy').value;
     var lecturaa = document.getElementById('lecturaa').value;
     var lecturab = document.getElementById('lecturab').value;
+    var total = document.getElementById('total').value;
+    
 
     var valor = document.getElementById('valor1')
     
@@ -88,6 +90,8 @@ function enviar1() {
     });
     var totalParts = parseFloat(tot.val()).toFixed(2).split('.');
     tot.val(totalParts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '.' + (totalParts.length > 1 ? totalParts[1] : '00'));
+    console.log(' lectura a:' + lecturaa);
+    console.log('lectura total: ' + tot.value);
 
 
     var ctx = document.getElementById('myChart');
@@ -99,12 +103,12 @@ function enviar1() {
                     label: ' ',
                     data: [dato, dato2, dato3, dato4, dato5, dato6,dato7,dato8,dato9,dato10,dato11,dato12],
                     backgroundColor: [
-                        'rgba(247, 255, 0, 0.2)',
-                        'rgba(247, 255, 0, 0.2)',
-                        'rgba(247, 255, 0, 0.2)',
-                        'rgba(247, 255, 0, 0.2)',
-                        'rgba(247, 255, 0, 0.2)',
-                        'rgba(247, 255, 0, 0.2)'
+                        'rgba(251, 255, 116, 0.2)',
+                        'rgba(251, 255, 116, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
                     ],
                     borderColor: [
                         'rgba(255, 99, 132, 1)',
@@ -127,6 +131,51 @@ function enviar1() {
                 }
             }
         });
+
+        var f = new Date();
+        let fecha = (f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+        console.log(fecha);
+
+        
+    
+        var ctx1 = document.getElementById('myChart2');
+        var myChart2 = new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: [fecha, 'Lectura A','Consumo'],
+                datasets: [{
+                    label: ' ',
+                    data: [lecturahoy, lecturaa, total],
+                    backgroundColor: [
+                        'rgba(251, 255, 116, 0.2)',
+                        'rgba(251, 255, 116, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });  
+        
 
 
 
