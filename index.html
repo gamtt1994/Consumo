@@ -11,7 +11,7 @@
 
     <script src="./js/cambio.js"> </script>
     <script src="./js/js.js"></script>
-    
+
     <script src="./js/Chart-bundle.js"> </script>
     <script src="./js/Chart-bundle-min.js"> </script>
     <script src="./js/Chart-min.js"> </script>
@@ -19,14 +19,14 @@
     <link rel="stylesheet" type="text/css" href="./css/Chart.css">
     <link rel="stylesheet" type="text/css" href="./css/Chart-min.css">
 
-   
-    
+
+
     <script src="./js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-  
-    
+
+
     <title>AGENDA</title>
 </head>
 
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container py-4">
         <form>
             <div class="row">
                 <div class="clearfix py-4 border-bottom">
@@ -69,8 +69,9 @@
                 <div class="col">
 
                     <div>
-                        <label class="form-check-label"><strong>Seleccione el ultimo mes del periodo de facturación</strong></label>
-                        <select id="mes" start="1" class="custom-select mes" onchange="cambiomes()" >
+                        <label class="form-check-label"><strong>Seleccione el ultimo mes del periodo de
+                                facturación</strong></label>
+                        <select id="mes" start="1" class="custom-select mes" onchange="cambiomes()">
                             <option value=1>Enero</option>
                             <option value=2>Febrero</option>
                             <option value=3>Marzo</option>
@@ -85,11 +86,7 @@
                             <option value=12>Diciembre</option>
                         </select>
                     </div>
-                    <div>
-                        <div>
-                            <strong>Seleccione los meses a comparar</strong>
-                        </div>
-                    </div>
+                
                     <div>
                         <div class="form-check">
                             <div>
@@ -98,7 +95,7 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato1" type="number" class="form-control" />
+                            <input id="dato1" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
@@ -110,7 +107,7 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato3" type="number" class="form-control" />
+                            <input id="dato3" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
@@ -122,7 +119,7 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato5" type="number" class="form-control" />
+                            <input id="dato5" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
@@ -134,7 +131,7 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato7" type="number" class="form-control" />
+                            <input id="dato7" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
@@ -146,7 +143,7 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato9" type="number" class="form-control" />
+                            <input id="dato9" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
@@ -158,30 +155,18 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato11" type="number" class="form-control" />
+                            <input id="dato11" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
-                    <div>
-                        <div>
-                            <label class="form-check-label" id="lectura"><strong>Lectura Hoy </strong></label>
-                            <input id="lecturahoy" type="number" class="form-control" />
-                        </div>
 
-                    </div>
-                    <div>
-                        <div>
-                            <label class="form-check-label" id="lectura"><strong>Lectura A</strong> </label>
-                            <input id="lecturaa" type="number" class="form-control" />
-                        </div>
-
-                    </div>
                 </div>
 
 
                 <div class="col">
                     <div>
-                        <label class="form-check-label"><strong>Seleccione el ultimo año del periodo de facturación</strong></label>
+                        <label class="form-check-label"><strong>Seleccione el ultimo año del periodo de
+                                facturación</strong></label>
                         <select id="año" start="1" class="form-control" onchange="cambioaño()">
                             <option value=2020>2020</option>
                             <option value=2019>2019</option>
@@ -189,19 +174,14 @@
                         </select>
                     </div>
                     <div>
-                        <div>
-                            <strong>.</strong>
-                        </div>
-                    </div>
-                    <div>
                         <div class="form-check">
                             <div>
                                 <input type="checkbox" id="valor2" class="form-check-input" tu-attr-precio="" />
-                                <label class="form-check-label" id="mes2" >Mes 2 </label>
+                                <label class="form-check-label" id="mes2">Mes 2 </label>
                             </div>
                         </div>
                         <div>
-                            <input id="dato2" type="number" class="form-control" value="0"/>
+                            <input id="dato2" type="number" value="0" class="form-control" value="0" />
                         </div>
 
                     </div>
@@ -214,7 +194,7 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato4" type="number" class="form-control" />
+                            <input id="dato4" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
@@ -227,7 +207,7 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato6" type="number" class="form-control" />
+                            <input id="dato6" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
@@ -240,7 +220,7 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato8" type="number" class="form-control" />
+                            <input id="dato8" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
@@ -253,7 +233,7 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato10" type="number" class="form-control" />
+                            <input id="dato10" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
@@ -266,24 +246,65 @@
                             </div>
                         </div>
                         <div>
-                            <input id="dato12" type="number" class="form-control" />
+                            <input id="dato12" type="number" value="0" class="form-control" />
                         </div>
 
                     </div>
-                    <div>
-                        <div>
-                            <label class="form-check-label" ><strong>Lectura B </strong></Lectura></label>
-                            <input id="lecturab" type="number" class="form-control" />
-                        </div>
 
+
+
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+
+                    <div class="row-3">
+                        <label class="form-check-label" id="lectura"><strong>Lectura Hoy </strong></label>
+                        <input id="lecturahoy" type="number" value="0" class="form-control" />
+                       
+                    </div>
+                    <div class="row-3">
+                        <label class="form-check-label" id="lectura"><strong>* Ingresar lectura actual del medidor
+                        </strong></label>
                     </div>
 
                 </div>
 
+                <div class="col">
+                    <div class="row-3">
+                        <label class="form-check-label" id="lectura"><strong>Lectura A</strong> </label>
+                        <input id="lecturaa" type="number" value="0" class="form-control" />
+                    </div>
+
+                    <div class="row-3">
+                        <label class="form-check-label" id="lectura" style="align-items: center !important"><strong>*
+                                Ingresar lectura actual del medidor
+                            </strong></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row-3">
+                        <label class="form-check-label"><strong>Lectura B </strong></Lectura></label>
+                        <input id="lecturab" type="number" value="0" class="form-control" />
+
+                    </div>
+                    <div class="row-3">
+                        <label class="form-check-label" id="lectura" style="align-items: center !important"><strong>*
+                                Ingresar lectura actual del medidor
+                            </strong></label>
+                    </div>
+
+                </div>
+                
             </div>
-            <button type="button" onclick="enviar1()">Calcular consumo</button>
-            <input id="total" type="text" placeholder="0.00" readonly />
-        </form>
+
+    <div class="py-4">
+        <button type="button" onclick="enviar1()">Calcular consumo</button>
+        <input id="total" type="text" placeholder="0.00" readonly />
+    </div>
+
+    </form>
     </div>
 
     <div class="container">
@@ -295,10 +316,10 @@
     <footer class="page-footer font-small blue">
 
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-        </div>   
-      
-      </footer>
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+
+    </footer>
 
 </body>
 
