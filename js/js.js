@@ -92,7 +92,7 @@ function enviar1() {
 
     if (lecturaa != lecturabb) {
         mensaje= document.getElementById("mensaje")
-        mensaje.innerHTML = "Su calculo de consumo no es conforme comuniquese con el tio seingel";
+        mensaje.innerHTML = "Su calculo de consumo no es conforme";
         mensaje.style.color = "red";
     }
     else {
@@ -151,12 +151,32 @@ function enviar1() {
     console.log(total);
 
     var valormaximo = Math.max(lecturahoy, lecturaa, total)
-
+    var valorminimo = Math.max(lecturahoy, lecturaa, total)
+    var valorminimo2 = valorminimo /2
     var rango = valormaximo / 10
 
     Chart.defaults.global.defaultFontSize = 12;
 
+    var chartPluginLineaHorizontal = {
+        afterDraw: function(chartobj) {
+          if (chartobj.options.lineaHorizontal) {
+            var ctx = chartobj.chart.ctx;
+            var valorY = chartobj.scales["y-axis-0"].getPixelForValue(chartobj.options.lineaHorizontal);
+            ctx.beginPath();
+            ctx.moveTo(0, valorY);
+            ctx.lineTo(chartobj.chart.width, valorY);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+          }
+        }
+      }
+      Chart.pluginService.register(chartPluginLineaHorizontal);
+
+
+
+
     var ctx1 = document.getElementById('myChart2');
+    
     var myChart2 = new Chart(ctx1, {
         type: 'bar',
         data: {
@@ -183,11 +203,12 @@ function enviar1() {
                 borderWidth: 1
             }]
         },
-        options: {
+        options: 
+        {lineaHorizontal: total,
             scales: {
                 yAxes: [{
                     ticks: {
-                        min: 0,
+                        min: valorminimo2,
                         max: valormaximo,
                         stepSize: rango
                     },
@@ -200,9 +221,6 @@ function enviar1() {
 
 
     var densityCanvas = document.getElementById("densityChart");
-
-
-
     var densityData = {
         label: 'Consumo',
         data: [lecturahoy, lecturaa, total],
