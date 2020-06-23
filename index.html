@@ -11,6 +11,7 @@
 
     <script src="./js/cambio.js"> </script>
     <script src="./js/js.js"></script>
+   
 
     <script src="./js/Chart-bundle.js"> </script>
     <script src="./js/Chart-bundle-min.js"> </script>
@@ -279,7 +280,7 @@
 
                     <div class="row-3">
                         <label class="form-check-label" id="lectura" style="align-items: center !important"><strong>*
-                                Ingresar lectura actual del medidor
+                            Ingrese el recibo a comparar Final
                             </strong></label>
                     </div>
                 </div>
@@ -291,7 +292,7 @@
                     </div>
                     <div class="row-3">
                         <label class="form-check-label" id="lectura" style="align-items: center !important"><strong>*
-                                Ingresar lectura actual del medidor
+                                Ingrese el recibo a comparar inicial
                             </strong></label>
                     </div>
 
@@ -302,6 +303,7 @@
     <div class="py-4">
         <button type="button" onclick="enviar1()">Calcular consumo</button>
         <input id="total" type="text" placeholder="0.00" readonly />
+        <label id="mensaje" class="form-check-label"> </label>
     </div>
 
     </form>

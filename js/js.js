@@ -17,9 +17,6 @@ function enviar1() {
     var lecturahoy = document.getElementById('lecturahoy').value;
     var lecturaa = document.getElementById('lecturaa').value;
     var lecturabb = document.getElementById('lecturab').value;
-
-
-
     var valor = document.getElementById('valor1')
 
     if (valor1.checked == true) {
@@ -90,6 +87,23 @@ function enviar1() {
     });
     var totalParts = parseInt(tot.val()).toFixed(2).split('.');
 
+    console.log("a" + lecturaa)
+    console.log("b" + lecturabb)
+
+    if (lecturaa != lecturabb) {
+        mensaje= document.getElementById("mensaje")
+        mensaje.innerHTML = "Si hay reclamo";
+        mensaje.style.color = "red";
+    }
+    else {
+        
+        mensaje= document.getElementById("mensaje")
+        mensaje.innerHTML = "No hay reclamo";
+        mensaje.style.color = "blue";
+
+
+    }
+
 
 
     var total = document.getElementById('total').value;
@@ -140,7 +154,7 @@ function enviar1() {
 
     var valormaximo = Math.max(lecturahoy, lecturaa, total)
 
-    var rango = valormaximo/10
+    var rango = valormaximo / 10
 
     Chart.defaults.global.defaultFontSize = 12;
 
@@ -184,12 +198,12 @@ function enviar1() {
         }
     });
 
-    
-   
+
+
 
     var densityCanvas = document.getElementById("densityChart");
 
-  
+
 
     var densityData = {
         label: 'Consumo',
