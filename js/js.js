@@ -1,3 +1,4 @@
+
 function enviar1() {
     var anofac = document.getElementById('año').value;
     var mesfac = document.getElementById('mes').value;
@@ -15,12 +16,12 @@ function enviar1() {
     var dato12 = document.getElementById('dato12').value;
     var lecturahoy = document.getElementById('lecturahoy').value;
     var lecturaa = document.getElementById('lecturaa').value;
-    var lecturab = document.getElementById('lecturab').value;
-    var total = document.getElementById('total').value;
-    
+    var lecturabb = document.getElementById('lecturab').value;
+
+
 
     var valor = document.getElementById('valor1')
-    
+
     if (valor1.checked == true) {
         valor1.value = dato;
         console.log(valor1.value)
@@ -45,22 +46,22 @@ function enviar1() {
         valor6.value = dato6;
         console.log(valor6.value)
     }
-    
+
     if (valor7.checked == true) {
         valor7.value = dato7;
         console.log(valor7.value)
     }
-    
+
     if (valor8.checked == true) {
         valor8.value = dato8;
         console.log(valor8.value)
     }
-    
+
     if (valor9.checked == true) {
         valor9.value = dato9;
         console.log(valor9.value)
     }
-    
+
     if (valor10.checked == true) {
         valor10.value = dato10;
         console.log(valor10.value)
@@ -70,112 +71,112 @@ function enviar1() {
         valor11.value = dato11;
         console.log(valor11.value)
     }
-    
+
 
     if (valor12.checked == true) {
         valor12.value = dato12;
         console.log(valor12.value)
     }
-    
 
     var tot = $('#total');
     tot.val(0);
     $('.form-check-input,#lecturab').each(function () {
         if ($(this).hasClass('form-check-input')) {
-            tot.val(($(this).is(':checked') ? parseFloat($(this).attr('value')) : 0) + parseFloat(tot.val()));
+            tot.val(($(this).is(':checked') ? parseInt($(this).attr('value')) : 0) + parseInt(tot.val()));
         }
         else {
-            tot.val(parseFloat(tot.val()) + (isNaN(parseFloat($(this).val())) ? 0 : parseFloat($(this).val())));
+            tot.val(parseInt(tot.val()) + (isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val())));
         }
     });
-    var totalParts = parseFloat(tot.val()).toFixed(2).split('.');
-    tot.val(totalParts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '.' + (totalParts.length > 1 ? totalParts[1] : '00'));
-    console.log(' lectura a:' + lecturaa);
-    console.log('lectura total: ' + tot.value);
+    var totalParts = parseInt(tot.val()).toFixed(2).split('.');
+   
 
+    
+    var total = document.getElementById('total').value;
 
     var ctx = document.getElementById('myChart');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: [label1, label2, label3, label4 , label5 , label6 ,label7,label8 , label9,label10,label11,label12],
-                datasets: [{
-                    label: ' ',
-                    data: [dato, dato2, dato3, dato4, dato5, dato6,dato7,dato8,dato9,dato10,dato11,dato12],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: [label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12],
+            datasets: [{
+                label: ' ',
+                data: [dato, dato2, dato3, dato4, dato5, dato6, dato7, dato8, dato9, dato10, dato11, dato12],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
                 }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
             }
-        });
+        }
+    });
 
-        var f = new Date();
-        let fecha = (f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
-        console.log(fecha);
+    var f = new Date();
+    let fecha = (f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
+    console.log(fecha);
+    console.log(totalParts);
+    console.log(total);
 
-        
-    
-        var ctx1 = document.getElementById('myChart2');
-        var myChart2 = new Chart(ctx1, {
-            type: 'bar',
-            data: {
-                labels: [fecha, 'Lectura A','Consumo'],
-                datasets: [{
-                    label: ' ',
-                    data: [lecturahoy, lecturaa, total],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
+
+    var ctx1 = document.getElementById('myChart2');
+    var myChart2 = new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: [fecha, 'Lectura A', 'Consumo'],
+            datasets: [{
+                label: ' ',
+                data: [lecturahoy, lecturaa, total],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 206, 86, 1)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 206, 86, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
                 }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
             }
-        });  
-        
+        }
+    });
+
 
 
 

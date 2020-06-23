@@ -178,7 +178,6 @@ function cambiomes() {
         mesfac12 = mesfac11 - 1
         anofac1 = anofac
         anofac = anofac - 1
-
         label1 = mesfac + "/" + anofac1;
         label2 = mesfac2 + "/" + anofac1;
         label3 = mesfac3 + "/" + anofac;
