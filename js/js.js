@@ -92,15 +92,13 @@ function enviar1() {
 
     if (lecturaa != lecturabb) {
         mensaje= document.getElementById("mensaje")
-        mensaje.innerHTML = "Si hay reclamo";
+        mensaje.innerHTML = "Su calculo de consumo no es conforme comuniquese con el tio seingel";
         mensaje.style.color = "red";
     }
     else {
-        
         mensaje= document.getElementById("mensaje")
-        mensaje.innerHTML = "No hay reclamo";
+        mensaje.innerHTML = "Su calculo de consumo es conforme";
         mensaje.style.color = "blue";
-
 
     }
 
