@@ -89,9 +89,9 @@ function enviar1() {
         }
     });
     var totalParts = parseInt(tot.val()).toFixed(2).split('.');
-   
 
-    
+
+
     var total = document.getElementById('total').value;
 
     var ctx = document.getElementById('myChart');
@@ -138,6 +138,11 @@ function enviar1() {
     console.log(totalParts);
     console.log(total);
 
+    var valormaximo = Math.max(lecturahoy, lecturaa, total)
+
+    var rango = valormaximo/10
+
+    Chart.defaults.global.defaultFontSize = 12;
 
     var ctx1 = document.getElementById('myChart2');
     var myChart2 = new Chart(ctx1, {
@@ -170,13 +175,77 @@ function enviar1() {
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero: true
-                    }
+                        min: 0,
+                        max: valormaximo,
+                        stepSize: rango
+                    },
                 }]
             }
         }
     });
 
+    
+   
+
+    var densityCanvas = document.getElementById("densityChart");
+
+  
+
+    var densityData = {
+        label: 'Consumo',
+        data: [lecturahoy, lecturaa, total],
+        backgroundColor: [
+            'rgba(0, 99, 132, 0.6)',
+            'rgba(30, 99, 132, 0.6)',
+            'rgba(60, 99, 132, 0.6)'
+        ],
+        borderColor: [
+            'rgba(0, 99, 132, 1)',
+            'rgba(30, 99, 132, 1)',
+            'rgba(60, 99, 132, 1)'
+        ],
+        borderWidth: 2,
+        hoverBorderWidth: 0
+    };
+
+    var chartOptions = {
+        scales: {
+            yAxes: [{
+                barPercentage: 1,
+                gridLines: {
+                    display: false
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    zeroLineColor: "black",
+                    zeroLineWidth: 2
+                },
+                ticks: {
+                    min: 0,
+                    max: valormaximo,
+                    stepSize: rango
+                },
+                scaleLabel: {
+                    display: true,
+                }
+            }]
+        },
+        elements: {
+            rectangle: {
+                borderSkipped: 'left',
+            }
+        }
+    };
+
+    var barChart = new Chart(densityCanvas, {
+        type: 'horizontalBar',
+        data: {
+            labels: [fecha, 'Lectura A', 'Consumo'],
+            datasets: [densityData],
+        },
+        options: chartOptions
+    });
 
 
 
