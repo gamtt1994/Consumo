@@ -1,4 +1,3 @@
-
 function enviar1() {
     var anofac = document.getElementById('año').value;
     var mesfac = document.getElementById('mes').value;
@@ -204,7 +203,8 @@ function enviar1() {
             }]
         },
         options: 
-        {lineaHorizontal: total,
+        {
+            lineaHorizontal: total,
             scales: {
                 yAxes: [{
                     ticks: {

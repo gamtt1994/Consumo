@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consumo</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="./js/cambio.js"> </script>
+    <script src="./js/Chart-bundle.js"> </script>
+    <script src="./js/Chart-bundle-min.js"> </script>
+    <script src="./js/Chart-min.js"> </script>
+    <script src="./js/Chart.js"> </script>
+    <link rel="stylesheet" type="text/css" href="./css/Chart.css">
+    <link rel="stylesheet" type="text/css" href="./css/Chart-min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+
+</head>
+
+<body onload="cambiomes()">
+    <div class="fondo_azul">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark fondo_verde">
+                <a class="navbar-brand" href="#">Seingel</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Calcular Consumo</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="clearfix py-4 border-bottom">
+            <h3>Consumo de Energía</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container py-4">
+            <div class="row">
+                <label class="form-check-label py-2"><strong>
+                        <h2>2) Consumo por mes:</h2>
+                    </strong></label>
+                <img class="nis" src="./img/barra.jpg" height="400px" />
+                <label class="form-check-label py-2"><strong>
+                        <h2>Los meses que debe ingresar son:</h2>
+                    </strong></label>
+                <label class="form-check-label" id="mescomparacion"></label>
+            </div>
+
+            <div class="row">
+                <div class="clearfix py-4 border-bottom">
+                    <h3> </h3>
+                </div>
+                <div class="col">
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor1" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes1">Mes 1 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato1" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor3" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes3">Mes 3 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato3" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor5" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes5">Mes 5 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato5" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor7" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes7">Mes 7 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato7" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor9" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes9">Mes 9 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato9" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor11" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes11">Mes 11 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato11" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="container py-2">
+                            <div class="row">
+                                <div class="mx-auto">
+                                    <button type="button" class="btn btn-primary center"
+                                        onclick="location.href='./index.html'">Anterior</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor2" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes2">Mes 2 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato2" type="number" value="0" class="form-control" value="0" />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor4" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes4">Mes 4 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato4" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor6" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes6">Mes 6 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato6" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor8" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes8">Mes 8 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato8" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor10" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes10">Mes 10 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato10" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" id="valor12" class="form-check-input" tu-attr-precio="" />
+                                <label class="form-check-label" id="mes12">Mes 12 </label>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="dato12" type="number" value="0" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div>
+
+                        <div class="container py-2">
+                            <div class="row">
+                                <div class="mx-auto">
+                                    <button type="button" class="btn btn-primary center"
+                                        onclick="consumo()">Siguiente</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+            <input type="number" id="total" class="form-check-input" style="display: none;" />
+            </form>
+
+            <footer class="page-footer font-small blue">
+
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+                </div>
+
+            </footer>
+
+</body>
+
+</html>
+

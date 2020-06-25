@@ -2,7 +2,7 @@
     background-color: royalblue;
 }
 
-#mes , #año, #lecturahoy , #lecturaa, #lecturab{
+#mes , #año, #lecturahoy , #lecturaa, #lecturab , #mesant, #anoant{
     background-color:  rgba(255,164,032);
     border:1px solid;
  
@@ -10,4 +10,17 @@
 
 #mensaje{
     text-align: center;
+}
+
+.nis{
+    width: 100%;
+}
+
+#mescomparacion{
+    color:red;
+    font-size: 24px;
+    text-align: center;
+    border:1px solid;
+    margin: 2px;
+    font-weight: 700;
 }
