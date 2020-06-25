@@ -4157,6 +4157,6 @@ function nuevadata(){
     localStorage.removeItem('lecturaHoy');
     localStorage.removeItem('lecturaA');
 
-    window.location.replace('./Index.html');
+    window.location.replace('./index.html');
 
 }
