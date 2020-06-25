@@ -12,8 +12,14 @@ function periodo() {
 }
 
 function regresarconsumo(){
-    window.location.replace('./consumorecibo.html');
+    window.location.replace('../consumo.html');
 }
+
+function regresarconsumorecibo(){
+    window.location.replace('../consumorecibo.html');
+}
+
+
 
 function consumo() {
     var dato = document.getElementById('dato1').value;
@@ -4157,6 +4163,73 @@ function nuevadata(){
     localStorage.removeItem('lecturaHoy');
     localStorage.removeItem('lecturaA');
 
-    window.location.replace('./index.html');
+    window.location.replace('../index.html');
 
+}
+
+
+function traermeses(){
+
+    var MesInicial1 = parseInt(localStorage.getItem("mesinicial"));
+    var AnoInicial = (localStorage.getItem("añoinicial"));
+    var anoanterior = (localStorage.getItem("anoanterior"));
+    var MesAnterior1 = parseInt(localStorage.getItem("mesanterior"));
+    console.log(MesInicial1);
+    switch(MesInicial1){
+        case 1: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Enero" + "/" + AnoInicial;
+        break;
+        case 2: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Febrero" + "/" + AnoInicial;
+        break;
+        case 3: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Marzo" + "/" + AnoInicial;
+        break;
+        case 4: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Abril" + "/" + AnoInicial;
+        break;
+        case 5: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Mayo" + "/" + AnoInicial;
+        break;
+        case 6: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Junio" + "/" + AnoInicial;
+        break;
+        case 7: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Julio" + "/" + AnoInicial;
+        break;
+        case 8: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Agostro" + "/" + AnoInicial;
+        break;
+        case 9: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Septiembre" + "/" + AnoInicial;
+        break;
+        case 10: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Octubre" + "/" + AnoInicial;
+        break;
+        case 11: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Noviembre" + "/" + AnoInicial;
+        break;
+        case 12: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Diciembre" + "/" + AnoInicial;
+        default: document.getElementById('lcarultimo').innerHTML = "Valor no ingresado correctamente";
+
+    }
+
+    switch(MesAnterior1){
+        case 1: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Enero" + "/" + AnoInicial;
+        break;
+        case 2: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Febrero" + "/" + AnoInicial;
+        break;
+        case 3: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Marzo" + "/" + AnoInicial;
+        break;
+        case 4: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Abril" + "/" + AnoInicial;
+        break;
+        case 5: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Mayo" + "/" + AnoInicial;
+        break;
+        case 6: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Junio" + "/" + AnoInicial;
+        break;
+        case 7: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Julio" + "/" + AnoInicial;
+        break;
+        case 8: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Agostro" + "/" + AnoInicial;
+        break;
+        case 9: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Septiembre" + "/" + AnoInicial;
+        break;
+        case 10: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Octubre" + "/" + AnoInicial;
+        break;
+        case 11: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Noviembre" + "/" + AnoInicial;
+        break;
+        case 12: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Diciembre" + "/" + AnoInicial;
+        default: document.getElementById('lcarcomparar').innerHTML = "Valor no ingresado correctamente";
+
+    }
+
+   
 }
