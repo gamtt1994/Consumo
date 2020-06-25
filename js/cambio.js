@@ -11,13 +11,6 @@ function periodo() {
 
 }
 
-function regresarconsumo(){
-    window.location.replace('./consumo.html');
-}
-
-function regresarconsumorecibo(){
-    window.location.replace('./consumorecibo.html');
-}
 
 
 
@@ -4162,8 +4155,6 @@ function nuevadata(){
     localStorage.removeItem('lecturaB');
     localStorage.removeItem('lecturaHoy');
     localStorage.removeItem('lecturaA');
-
-    window.location.replace('./index.html');
 
 }
 
