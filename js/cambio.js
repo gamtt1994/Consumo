@@ -12,11 +12,11 @@ function periodo() {
 }
 
 function regresarconsumo(){
-    window.location.replace('../consumo.html');
+    window.location.replace('./consumo.html');
 }
 
 function regresarconsumorecibo(){
-    window.location.replace('../consumorecibo.html');
+    window.location.replace('./consumorecibo.html');
 }
 
 
@@ -4163,7 +4163,7 @@ function nuevadata(){
     localStorage.removeItem('lecturaHoy');
     localStorage.removeItem('lecturaA');
 
-    window.location.replace('../index.html');
+    window.location.replace('./index.html');
 
 }
 
