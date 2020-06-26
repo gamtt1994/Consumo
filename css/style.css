@@ -88,7 +88,7 @@ input[type=checkbox] {
     .contenido {
         font-size: 1.2rem;
         padding: 2px;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         padding: 3px;
     }
@@ -330,6 +330,7 @@ input[type=checkbox] {
     input[type=number] {
         transform: scale(0.8);     
     }
+
 
     .nis2 {
         width: 100%;

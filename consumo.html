@@ -69,7 +69,8 @@
 
 
                 <label class="form-check-label py-2"><strong>
-                        <h2 id="mensajeconsumo">Marque el checklist <input type="checkbox" checked disabled /> y completo los datos del consumo del
+                        <h2 id="mensajeconsumo">Marque el checklist <input type="checkbox" checked disabled /> y
+                            completo los datos del consumo del
                             mes :</h2>
                     </strong></label>
                 <!--<label class="form-check-label" id="mescomparacion"></label>-->
@@ -150,17 +151,6 @@
                         </div>
                         <div>
                             <input id="dato11" type="number" value="0" class="form-control" />
-                        </div>
-
-                    </div>
-                    <div>
-                        <div class="container py-2">
-                            <div class="row">
-                                <div class="mx-auto">
-                                    <button type="button" class="btn btn-primary center btn-lg"
-                                        onclick="location.href='./index.html'">Anterior</button>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
@@ -245,31 +235,41 @@
                         <div>
                             <input id="dato12" type="number" value="0" class="form-control" />
                         </div>
-
                     </div>
-                    <div>
 
-                        <div class="container py-2">
+                </div>
+            </div>
+            <input type="number" id="total" class="form-check-input" style="display: none;" />
+            </form>
+
+            <div class="row py-4">
+                <div class="col-6 py-2">
+                    <div class="row">
+                        <div class="container">
                             <div class="row">
                                 <div class="mx-auto">
                                     <button type="button" class="btn btn-primary center btn-lg"
-                                        onclick="consumo()">Siguiente</button>
+                                        onclick="location.href='./index.html'"> < Anterior</button>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
-
 
                 </div>
 
-
+                <div class="col-6 py-2">
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <div class="mx-auto">
+                                    <button type="button" class="btn btn-primary center btn-lg"
+                                        onclick="consumo()">Siguiente ></button>                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <input type="number" id="total" class="form-check-input" style="display: none;" />
-            </form>
         </div>
     </div>
     <footer class="page-footer font-small blue  pie">
