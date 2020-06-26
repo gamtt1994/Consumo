@@ -25,6 +25,16 @@
 	border-radius: 10px;
 }
 
+
+.nis2 {
+	width: 100%;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+	border: 3px solid;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+
 #mescomparacion {
 	color: red;
 	font-size: 24px;
@@ -63,8 +73,7 @@ input[type=checkbox] {
 
 }
 
-
-@media screen and (max-width: 620px){
+@media screen and (max-width: 1440px){
     #titulo {
         font-size: 2.4rem;
         padding: 2px;
@@ -72,14 +81,176 @@ input[type=checkbox] {
         border-radius: 10px;
     }
 
-    #titulo {
-        font-size: 1.8rem;
-        padding: 2px;
-        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    #titulo2{
+        font-size: 1.5rem;
         border-radius: 10px;
     }
     .contenido {
         font-size: 1.2rem;
+        padding: 2px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 3px;
+    }
+    
+    input[type=checkbox] {
+        transform: scale(0.9);     
+    }
+
+    input[type=number] {
+        transform: scale(0.8);     
+    }
+
+    .nis2 {
+        width: 100%;
+        height: 280px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    #mensajeconsumo{
+        font-size: 22px;
+    }
+    .nis3{
+        width: 100%;
+        height: 540px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 860px){
+    #titulo {
+        font-size: 2.4rem;
+        padding: 2px;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    #titulo2{
+        font-size: 1.5rem;
+        border-radius: 10px;
+    }
+    .contenido {
+        font-size: 1.2rem;
+        padding: 2px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 3px;
+    }
+    
+    input[type=checkbox] {
+        transform: scale(0.9);     
+    }
+
+    input[type=number] {
+        transform: scale(0.8);     
+    }
+
+    .nis2 {
+        width: 100%;
+        height: 220px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    #mensajeconsumo{
+        font-size: 22px;
+    }
+    .nis3{
+        width: 100%;
+        height: 440px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 780px){
+    #titulo {
+        font-size: 2.4rem;
+        padding: 2px;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    #titulo2{
+        font-size: 1.5rem;
+        border-radius: 10px;
+    }
+    .contenido {
+        font-size: 1.2rem;
+        padding: 2px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 3px;
+    }
+    
+    input[type=checkbox] {
+        transform: scale(0.9);     
+    }
+
+    input[type=number] {
+        transform: scale(0.8);     
+    }
+
+    .nis2 {
+        width: 100%;
+        height: 180px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    #mensajeconsumo{
+        font-size: 18px;
+    }
+    .nis3{
+        width: 100%;
+        height: 400px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 620px){
+    #titulo {
+        font-size: 2rem;
+        padding: 2px;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    #titulo2{
+        font-size: 1.5rem;
+        border-radius: 10px;
+    }
+    .contenido {
+        font-size: 1rem;
         padding: 2px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
@@ -92,34 +263,96 @@ input[type=checkbox] {
     
     }
 
+    input[type=checkbox] {
+        transform: scale(0.9);     
+    }
+
+    input[type=number] {
+        transform: scale(0.8);     
+    }
+
+    .nis2 {
+        width: 100%;
+        height: 150px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .nis3{
+        width: 100%;
+        height: 360px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    #mensajeconsumo{
+        font-size: 16px;
+    }
 
 }
 
 @media screen and (max-width: 480px){
     #titulo {
-        font-size: 2rem;
-        padding: 2px;
+        font-size: 1.8rem;
         box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
     }
 
-    #titulo {
+
+    #titulo2{
         font-size: 1.5rem;
-        padding: 2px;
-        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
     }
+
     .contenido {
-        font-size: 0.9rem;
+        font-size: 12px;
         padding: 2px;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 3px;
+    }
+
+    .contenido2{
+        font-size: 12px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         padding: 3px;
     }
     
     input[type=checkbox] {
-        transform: scale(1);
-        align-content: center;
-    
+        transform: scale(0.9);     
     }
+
+    input[type=number] {
+        transform: scale(0.8);     
+    }
+
+    .nis2 {
+        width: 100%;
+        height: 150px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .nis3{
+        width: 100%;
+        height: 380px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        border: 3px solid;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    #mensajeconsumo{
+        font-size: 16px;
+    }
+
+    
+
 }

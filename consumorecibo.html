@@ -49,7 +49,7 @@
 
     <div class="container">
         <div class="clearfix py-4 border-bottom">
-            <h3>Consumo de Energía</h3>
+            <h3 id="titulo">Consumo de Energía</h3>
         </div>
     </div>
 
@@ -57,24 +57,24 @@
         <div class="container py-4">
             <div class="row">
                 <label class="form-check-label py-2"><strong>
-                        <h2>3) lectura de consumo actual en recibo (LCAR)
+                        <h2 id="titulo2">3) lectura de consumo actual en recibo (LCAR)
                         </h2>
                     </strong></label>
 
                     <div class="container">
                         <div class="row">
                             <div class="mx-auto">
-                                <img class="nis" src="./img/suministro.jpg"  height="400" />
+                                <img class="nis3" src="./img/suministro.jpg"  height="400" />
                             </div>
                         </div>
                     </div>
                 
             </div>
             <form>
-                <div class="row py-4">
+                <div class="row py-2 contenido2">
                     <div class="col-6 py-2">
                         <div class="row-3">
-                            <label class="form-check-label" id="lectura"><strong> Lectura Actual - Ultimo Recibo </strong> </label>
+                            <label class="form-check-label" id="lectura"><strong> LCAR - Ultimo Recibo </strong> </label>
                             <input id="lecturaa" type="number" value="0" class="form-control" />
                         </div>
 
@@ -88,8 +88,8 @@
 
                     <div class="col-6 py-2">
                         <div class="row-3">
-                            <label class="form-check-label" id="lectura"><strong>Lectura Actual - Recibo a Comparar</strong> </label>
-                            <input id="lecturab" type="number" value="0" class="form-control" />
+                            <label class="form-check-label" id="lectura"><strong>LCAR - Recibo a Comparar</strong> </label>
+                            <input id="lecturab" type="number" value="0" class="form-control"/>
                         </div>
 
                         <div class="row-3">
@@ -107,7 +107,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="mx-auto">
-                                        <button type="button" class="btn btn-primary center"
+                                        <button type="button" class="btn btn-primary center btn-lg"
                                         onclick="location.href='./consumo.html'">Anterior</button>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="mx-auto">
-                                            <button type="button" class="btn btn-primary center"
+                                            <button type="button" class="btn btn-primary center btn-lg"
                                                 onclick="lecturahoy()">Siguiente</button>
                                         </div>
                                     </div>
@@ -135,12 +135,10 @@
         </div>
     </div>
 
-    <footer class="page-footer font-small blue">
-
+    <footer class="page-footer font-small blue  pie">
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
         </div>
-
     </footer>
 
 </body>
