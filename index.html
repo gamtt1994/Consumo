@@ -24,8 +24,8 @@
 </head>
 
 <body onload="nuevadata()">
-    <div class="fondo_azul ">
-        <div class="container">
+    <div class="container-fluid fondo_azul">
+        <div class="container ">
             <nav class="navbar navbar-expand-lg navbar-dark fondo_verde">
                 <a class="navbar-brand" href="#">Seingel</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -38,7 +38,7 @@
                             <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Calcular Consumo</a>
+                            <a class="nav-link" href="#" >Calcular Consumo</a>
                         </li>
                     </ul>
 
@@ -49,16 +49,16 @@
 
     <div class="container">
         <div class="clearfix py-4 border-bottom">
-            <h3>Consumo de Energía</h3>
+            <h3 id="titulo">Consumo de Energía</h3>
         </div>
     </div>
     <div class="container">
-        <div class="container py-2">
+        <div class="container-fluid py-2">
             <div class="row">
                 <label class="form-check-label py-2"><strong>
-                    <h2>1) Periodo de facturación:</h2>
-                </strong></label>
-                <div class="container">
+                        <h2>1) Periodo de facturación:</h2>
+                    </strong></label>
+                <div class="container-fluid">
                     <div class="row">
                         <div class="mx-auto">
                             <img class="nis" src="./img/nis.jpg" />
@@ -68,15 +68,15 @@
             </div>
 
 
-            <div class="row ">
+            <div class="row py-4 contenido">
 
                 <div class="col-12 ">
                     <label class="form-check-label"><strong>Periodo de facturación del ultimo recibo:</strong></label>
                     <div class="row py-1">
-                        <div class="col-2">
+                        <div class="col-2 mx-auto">
                             <label class="form-check-label"><strong>Mes: </strong></Lectura></label>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 mx-auto">
                             <select id="mes" start="1" class="custom-select mes" onchange="cambiomes()">
                                 <option value=1>Enero</option>
                                 <option value=2>Febrero</option>
@@ -96,33 +96,28 @@
                     </div>
 
                     <div class="row py-1">
-                        <div class="col-2">
+                        <div class="col-2 mx-auto">
                             <label class="form-check-label"><strong>Año: </strong></Lectura></label>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 mx-auto">
                             <select id="año" start="1" class="form-control" onchange="cambiomes()">
                                 <option value=2020>2020</option>
                                 <option value=2019>2019</option>
                                 <option value=2018>2018</option>
                             </select>
                         </div>
-
                     </div>
-
-
                 </div>
-
-
             </div>
 
-            <div class="row">
+            <div class="row py-4 contenido">
                 <div class="col-12">
                     <label class="form-check-label"><strong>Periodo de Facturación de recibo anterior:</strong></label>
                     <div class="row py-1">
-                        <div class="col-2">
+                        <div class="col-2 mx-auto">
                             <label class="form-check-label"><strong>Mes: </strong></Lectura></label>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 mx-auto">
                             <select id="mesant" start="1" class="custom-select mes" onchange="desigualdad()">
                                 <option value=1>Enero</option>
                                 <option value=2>Febrero</option>
@@ -142,10 +137,10 @@
                     </div>
 
                     <div class="row py-1">
-                        <div class="col-2">
+                        <div class="col-2 mx-auto">
                             <label class="form-check-label"><strong>Año: </strong></Lectura></label>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 mx-auto">
                             <select id="anoant" start="1" class="form-control" onchange="desigualdad()">
                                 <option value=2020>2020</option>
                                 <option value=2019>2019</option>
@@ -164,10 +159,10 @@
 
         </div>
 
-        <div class="container">
+        <div class="container-fluid py-4">
             <div class="row">
                 <div class="mx-auto">
-                    <button type="button" class="btn btn-primary" onclick="periodo()">Siguiente</button>
+                    <button type="button" class="btn btn-primary btn-lg" onclick="periodo()">Siguiente ></button>
                 </div>
             </div>
         </div>
@@ -175,12 +170,10 @@
     </div>
 
 
-    <footer class="page-footer font-small blue">
-
+    <footer class="page-footer font-small blue  pie">
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
         </div>
-
     </footer>
 
 </body>

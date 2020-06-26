@@ -1,26 +1,64 @@
-.fondo_azul{
-    background-color: royalblue;
+.fondo_azul {
+	background-color: royalblue;
 }
 
-#mes , #año, #lecturahoy , #lecturaa, #lecturab , #mesant, #anoant{
-    background-color:  rgba(255,164,032);
-    border:1px solid;
- 
+#mes,
+#año,
+#lecturahoy,
+#lecturaa,
+#lecturab,
+#mesant,
+#anoant {
+	background-color: rgba(255, 164, 032);
+	border: 1px solid;
 }
 
-#mensaje{
-    text-align: center;
+#mensaje {
+	text-align: center;
 }
 
-.nis{
-    width: 100%;
+.nis {
+	width: 100%;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+	border: 3px solid;
+	padding: 5px;
+	border-radius: 10px;
 }
 
-#mescomparacion{
-    color:red;
-    font-size: 24px;
-    text-align: center;
-    border:1px solid;
-    margin: 2px;
-    font-weight: 700;
+#mescomparacion {
+	color: red;
+	font-size: 24px;
+	text-align: center;
+	border: 1px solid;
+	margin: 2px;
+	font-weight: 700;
+}
+
+#titulo {
+	font-size: 3rem;
+	padding: 2px;
+	box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+.contenido {
+	font-size: 1.8rem;
+	padding: 2px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	padding: 3px;
+}
+
+.pie {
+	background-color: royalblue;
+	position: relative;
+    bottom: 0px;
+    height: 150px;
+	color: white;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    align-content: center;
+
 }
