@@ -34,7 +34,7 @@ function consumo() {
         localStorage.setItem("valor1", valor1.value);
         console.log(valor1.value)
     }
-    else{
+    else {
         localStorage.setItem("valor1", 0);
     }
     if (valor2.checked == true) {
@@ -43,7 +43,7 @@ function consumo() {
         console.log(valor2.value)
     }
 
-    else{
+    else {
         localStorage.setItem("valor2", 0);
     }
 
@@ -53,7 +53,7 @@ function consumo() {
         console.log(valor3.value)
     }
 
-    else{
+    else {
         localStorage.setItem("valor3", 0);
     }
 
@@ -62,7 +62,7 @@ function consumo() {
         localStorage.setItem("valor4", valor4.value);
         console.log(valor4.value)
     }
-    else{
+    else {
         localStorage.setItem("valor4", 0);
     }
 
@@ -71,7 +71,7 @@ function consumo() {
         localStorage.setItem("valor5", valor5.value);
         console.log(valor5.value)
     }
-    else{
+    else {
         localStorage.setItem("valor5", 0);
     }
 
@@ -80,7 +80,7 @@ function consumo() {
         localStorage.setItem("valor6", valor6.value);
         console.log(valor6.value)
     }
-    else{
+    else {
         localStorage.setItem("valor6", 0);
     }
 
@@ -89,7 +89,7 @@ function consumo() {
         localStorage.setItem("valor7", valor7.value);
         console.log(valor7.value)
     }
-    else{
+    else {
         localStorage.setItem("valor7", 0);
     }
 
@@ -98,7 +98,7 @@ function consumo() {
         localStorage.setItem("valor8", valor8.value);
         console.log(valor8.value)
     }
-    else{
+    else {
         localStorage.setItem("valor8", 0);
     }
 
@@ -107,7 +107,7 @@ function consumo() {
         localStorage.setItem("valor9", valor9.value);
         console.log(valor9.value)
     }
-    else{
+    else {
         localStorage.setItem("valor9", 0);
     }
 
@@ -116,7 +116,7 @@ function consumo() {
         localStorage.setItem("valor10", valor10.value);
         console.log(valor10.value)
     }
-    else{
+    else {
         localStorage.setItem("valor10", 0);
     }
 
@@ -125,7 +125,7 @@ function consumo() {
         localStorage.setItem("valor11", valor11.value);
         console.log(valor11.value)
     }
-    else{
+    else {
         localStorage.setItem("valor11", 0);
     }
 
@@ -135,7 +135,7 @@ function consumo() {
         localStorage.setItem("valor12", valor12.value);
         console.log(valor12.value)
     }
-    else{
+    else {
         localStorage.setItem("valor12", 0);
     }
 
@@ -154,11 +154,11 @@ function consumo() {
 
     window.location.replace('./consumorecibo.html');
 
-   
-    
+
+
 }
 
-function lecturahoy(){
+function lecturahoy() {
     var lecturaa = document.getElementById('lecturaa').value;
     var lecturab = document.getElementById('lecturab').value;
     localStorage.setItem("lecturaA", lecturaa);
@@ -166,7 +166,7 @@ function lecturahoy(){
     window.location.replace('./lecturahoy.html');
 }
 
-function anteriorgrafico(){
+function anteriorgrafico() {
     window.location.replace('./consumorecibo.html');
 }
 
@@ -236,15 +236,15 @@ function cambiomes() {
         document.getElementById("mes11").innerHTML = "El mes y año: " + label11;
         document.getElementById("mes12").innerHTML = "El mes y año: " + label12;
 
-        
+
         localStorage.setItem("fec1", label1);
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -254,7 +254,7 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
             //diciembre
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac;
             document.getElementById('mes2').disabled = true;
             document.getElementById('dato2').disabled = true;
 
@@ -290,7 +290,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
             //Noviembre
-            document.getElementById("mescomparacion").innerHTML = " Enero/" + anofac + "- Diciembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = " Enero/" + anofac + "- Diciembre/" + anofac2;
 
             document.getElementById('mes3').disabled = true;
             document.getElementById('dato3').disabled = true;
@@ -324,7 +324,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
             //Octubre
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
 
             document.getElementById('mes4').disabled = true;
             document.getElementById('dato4').disabled = true;
@@ -355,7 +355,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 9) {
             //Setiembre
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
 
             document.getElementById('mes5').disabled = true;
             document.getElementById('dato5').disabled = true;
@@ -382,7 +382,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
 
             document.getElementById('mes6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -406,7 +406,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
 
             document.getElementById('mes7').disabled = true;
             document.getElementById('dato7').disabled = true;
@@ -427,7 +427,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
 
             document.getElementById('mes8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -445,7 +445,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
 
             document.getElementById('mes9').disabled = true;
             document.getElementById('dato9').disabled = true;
@@ -461,7 +461,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2;
 
             document.getElementById('mes10').disabled = true;
             document.getElementById('dato10').disabled = true;
@@ -474,7 +474,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2;
 
             document.getElementById('mes11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -485,14 +485,14 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2 + " - Marzo/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2 + " - Marzo/" + anofac2;
 
             document.getElementById('mes12').disabled = true;
             document.getElementById('dato12').disabled = true;
 
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2 + " - Marzo/" + anofac2 + " - Febrero/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2 + " - Marzo/" + anofac2 + " - Febrero/" + anofac2;
         }
 
 
@@ -550,10 +550,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -562,7 +562,7 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
             //diciembre
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac;
 
             document.getElementById('valor3').disabled = true;
             document.getElementById('dato3').disabled = true;
@@ -597,7 +597,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
             //Noviembre
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2;
 
             document.getElementById('valor4').disabled = true;
             document.getElementById('dato4').disabled = true;
@@ -629,7 +629,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
             //Octubre
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
+           // document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
 
             document.getElementById('valor5').disabled = true;
             document.getElementById('dato5').disabled = true;
@@ -657,7 +657,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 9) {
             //Setiembre
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
 
             document.getElementById('valor6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -681,7 +681,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
 
             document.getElementById('valor7').disabled = true;
             document.getElementById('dato7').disabled = true;
@@ -702,7 +702,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
 
             document.getElementById('valor8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -720,7 +720,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
 
             document.getElementById('valor9').disabled = true;
             document.getElementById('dato9').disabled = true;
@@ -736,7 +736,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
 
             document.getElementById('valor10').disabled = true;
             document.getElementById('dato110').disabled = true;
@@ -749,7 +749,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -759,7 +759,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2;
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
@@ -767,10 +767,10 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2 + " - Marzo/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2 + " - Marzo/" + anofac2;
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Febrero/" + anofac;
 
             document.getElementById('valor2').disabled = true;
             document.getElementById('dato2').disabled = true;
@@ -856,17 +856,17 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
         localStorage.setItem("fec12", label12);
 
         if (localStorage.mesanterior == 12) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + "- Enero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + "- Enero/" + anofac;
 
             document.getElementById('valor4').disabled = true;
             document.getElementById('dato4').disabled = true;
@@ -897,7 +897,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 11) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2;
 
             document.getElementById('valor5').disabled = true;
             document.getElementById('dato5').disabled = true;
@@ -924,7 +924,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 10) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
 
             document.getElementById('valor6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -949,7 +949,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 9) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
 
             document.getElementById('valor7').disabled = true;
             document.getElementById('dato7').disabled = true;
@@ -971,7 +971,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
 
             document.getElementById('valor8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -990,7 +990,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
 
             document.getElementById('valor9').disabled = true;
             document.getElementById('dato9').disabled = true;
@@ -1005,7 +1005,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
 
             document.getElementById('valor10').disabled = true;
             document.getElementById('dato10').disabled = true;
@@ -1017,7 +1017,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + "- Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -1026,18 +1026,18 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2;
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2 + " - Abril/" + anofac2;
 
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac;
 
             document.getElementById('valor2').disabled = true;
             document.getElementById('dato2').disabled = true;
@@ -1073,7 +1073,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Marzo/" + anofac + " - Febrero/" + anofac;
 
             document.getElementById('valor3').disabled = true;
             document.getElementById('dato3').disabled = true;
@@ -1157,10 +1157,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -1168,7 +1168,7 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
 
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
 
             document.getElementById('valor5').disabled = true;
             document.getElementById('dato5').disabled = true;
@@ -1197,7 +1197,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
 
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
 
             document.getElementById('valor6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -1223,7 +1223,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
 
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
 
             document.getElementById('valor7').disabled = true;
             document.getElementById('dato7').disabled = true;
@@ -1246,7 +1246,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 9) {
 
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
+           //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
 
             document.getElementById('valor8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -1265,7 +1265,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
 
             document.getElementById('valor9').disabled = true;
             document.getElementById('dato9').disabled = true;
@@ -1280,7 +1280,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
 
             document.getElementById('valor10').disabled = true;
             document.getElementById('dato10').disabled = true;
@@ -1293,7 +1293,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -1302,17 +1302,17 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2 + " - Mayo/" + anofac2;
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac;
 
 
             document.getElementById('valor2').disabled = true;
@@ -1351,7 +1351,7 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac;
 
             document.getElementById('valor3').disabled = true;
             document.getElementById('dato3').disabled = true;
@@ -1384,7 +1384,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
 
             document.getElementById('valor4').disabled = true;
             document.getElementById('dato4').disabled = true;
@@ -1465,10 +1465,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -1476,7 +1476,7 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
 
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
 
             document.getElementById('valor6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -1503,7 +1503,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
 
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
 
             document.getElementById('valor7').disabled = true;
             document.getElementById('dato7').disabled = true;
@@ -1527,7 +1527,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
 
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
 
             document.getElementById('valor8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -1547,7 +1547,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 9) {
 
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
 
             document.getElementById('valor9').disabled = true;
             document.getElementById('dato9').disabled = true;
@@ -1564,9 +1564,9 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
 
-            
+
             document.getElementById('valor10').disabled = true;
             document.getElementById('dato10').disabled = true;
 
@@ -1579,7 +1579,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 +" - Agosto/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -1588,20 +1588,20 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 +" - Agosto/" + anofac2 + " - Julio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
 
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 +" - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2 + " - Junio/" + anofac2;
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac;
 
-            
+
             document.getElementById('valor2').disabled = true;
             document.getElementById('dato2').disabled = true;
 
@@ -1637,7 +1637,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac;
+           //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac;
 
 
             document.getElementById('valor3').disabled = true;
@@ -1673,7 +1673,7 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac;
 
             document.getElementById('valor4').disabled = true;
             document.getElementById('dato4').disabled = true;
@@ -1705,7 +1705,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Mayo/" + anofac + "- Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
 
             document.getElementById('valor5').disabled = true;
             document.getElementById('dato5').disabled = true;
@@ -1783,10 +1783,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -1794,7 +1794,7 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
 
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
 
 
             document.getElementById('valor7').disabled = true;
@@ -1818,7 +1818,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
 
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
 
             document.getElementById('valor8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -1838,7 +1838,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
 
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
 
             document.getElementById('valor9').disabled = true;
             document.getElementById('dato9').disabled = true;
@@ -1854,7 +1854,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 9) {
 
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
 
             document.getElementById('valor10').disabled = true;
             document.getElementById('dato10').disabled = true;
@@ -1867,7 +1867,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -1877,18 +1877,18 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
 
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2 + " - Julio/" + anofac2;
 
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac;
 
             document.getElementById('valor2').disabled = true;
             document.getElementById('dato2').disabled = true;
@@ -1925,7 +1925,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac;
 
             document.getElementById('valor3').disabled = true;
             document.getElementById('dato3').disabled = true;
@@ -1959,7 +1959,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
 
             document.getElementById('valor4').disabled = true;
             document.getElementById('dato4').disabled = true;
@@ -1991,7 +1991,7 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
 
             document.getElementById('valor5').disabled = true;
             document.getElementById('dato5').disabled = true;
@@ -2020,7 +2020,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
 
             document.getElementById('valor6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -2094,10 +2094,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -2105,7 +2105,7 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
 
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
 
 
             document.getElementById('valor8').disabled = true;
@@ -2127,7 +2127,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
 
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
 
             document.getElementById('valor9').disabled = true;
             document.getElementById('dato9').disabled = true;
@@ -2145,7 +2145,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
 
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
 
             document.getElementById('valor10').disabled = true;
             document.getElementById('dato10').disabled = true;
@@ -2159,9 +2159,9 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 9) {
 
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
 
-             document.getElementById('valor11').disabled = true;
+            document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
 
             document.getElementById('valor12').disabled = true;
@@ -2169,17 +2169,17 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
 
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2 + " - Agosto/" + anofac2;
 
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac;
 
             document.getElementById('valor2').disabled = true;
             document.getElementById('dato2').disabled = true;
@@ -2216,7 +2216,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac;
 
             document.getElementById('valor3').disabled = true;
             document.getElementById('dato3').disabled = true;
@@ -2250,7 +2250,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
 
             document.getElementById('valor4').disabled = true;
             document.getElementById('dato4').disabled = true;
@@ -2281,7 +2281,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
 
             document.getElementById('valor5').disabled = true;
             document.getElementById('dato5').disabled = true;
@@ -2310,7 +2310,7 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
 
 
             document.getElementById('valor6').disabled = true;
@@ -2337,7 +2337,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
 
             document.getElementById('valor7').disabled = true;
             document.getElementById('dato7').disabled = true;
@@ -2408,10 +2408,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -2419,7 +2419,7 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
 
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
 
 
             document.getElementById('valor9').disabled = true;
@@ -2437,7 +2437,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
 
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
 
 
             document.getElementById('valor10').disabled = true;
@@ -2451,7 +2451,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
 
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -2461,19 +2461,19 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 9) {
 
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
 
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2 + " - Setiembre/" + anofac2;
 
 
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac;
 
             document.getElementById('valor2').disabled = true;
             document.getElementById('dato2').disabled = true;
@@ -2507,11 +2507,11 @@ function cambiomes() {
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
-            
+
 
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac;
 
             document.getElementById('valor3').disabled = true;
             document.getElementById('dato3').disabled = true;
@@ -2545,7 +2545,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
 
 
             document.getElementById('valor4').disabled = true;
@@ -2577,7 +2577,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
 
             document.getElementById('valor5').disabled = true;
             document.getElementById('dato5').disabled = true;
@@ -2605,7 +2605,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
 
             document.getElementById('valor6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -2631,7 +2631,7 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
 
 
             document.getElementById('valor7').disabled = true;
@@ -2655,7 +2655,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
 
             document.getElementById('valor8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -2723,10 +2723,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -2734,9 +2734,7 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
 
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac+ " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
-
-
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
 
             document.getElementById('valor10').disabled = true;
             document.getElementById('dato10').disabled = true;
@@ -2750,8 +2748,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
 
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac+ " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
-
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -2762,21 +2759,17 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
 
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac+ " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
-
-            
-
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 9) {
 
-            document.getElementById("mescomparacion").innerHTML =  "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac+ " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
-  
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2 + " - Octubre/" + anofac2;
 
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac;
             document.getElementById('valor2').disabled = true;
             document.getElementById('dato2').disabled = true;
 
@@ -2813,7 +2806,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac;
 
 
             document.getElementById('valor3').disabled = true;
@@ -2845,11 +2838,11 @@ function cambiomes() {
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
-            
+
 
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac;
 
 
             document.getElementById('valor4').disabled = true;
@@ -2881,7 +2874,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
 
             document.getElementById('valor5').disabled = true;
             document.getElementById('dato5').disabled = true;
@@ -2909,7 +2902,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac+ " - Mayo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
 
             document.getElementById('valor6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -2934,7 +2927,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac+ " - Mayo/" + anofac + " - Abril/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
 
 
             document.getElementById('valor7').disabled = true;
@@ -2958,7 +2951,7 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac+ " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
 
 
             document.getElementById('valor8').disabled = true;
@@ -2979,7 +2972,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac+ " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
 
 
             document.getElementById('valor9').disabled = true;
@@ -3043,10 +3036,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -3054,7 +3047,7 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
 
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -3065,7 +3058,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
 
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
 
 
             document.getElementById('valor12').disabled = true;
@@ -3074,13 +3067,13 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
 
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 + " - Noviembre/" + anofac2;
 
 
         }
         else if (localStorage.mesanterior == 9) {
 
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac;
 
 
             document.getElementById('valor2').disabled = true;
@@ -3115,11 +3108,11 @@ function cambiomes() {
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
-            
+
 
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Setiembre/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Setiembre/" + anofac;
 
 
             document.getElementById('valor3').disabled = true;
@@ -3151,13 +3144,12 @@ function cambiomes() {
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
-            
+
 
 
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac;
-            
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac;
 
             document.getElementById('valor4').disabled = true;
             document.getElementById('dato4').disabled = true;
@@ -3185,12 +3177,12 @@ function cambiomes() {
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
-            
-            
+
+
 
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac;
 
 
             document.getElementById('valor5').disabled = true;
@@ -3216,13 +3208,11 @@ function cambiomes() {
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
-            
+
 
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
-
-
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
 
             document.getElementById('valor6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -3247,7 +3237,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
 
 
             document.getElementById('valor7').disabled = true;
@@ -3271,8 +3261,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
-
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
 
             document.getElementById('valor8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -3292,7 +3281,7 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
 
             document.getElementById('valor9').disabled = true;
             document.getElementById('dato9').disabled = true;
@@ -3310,7 +3299,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Octubre/" + anofac + "Septiembre/" + anofac + "Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
 
             document.getElementById('valor10').disabled = true;
             document.getElementById('dato10').disabled = true;
@@ -3371,10 +3360,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -3383,8 +3372,8 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
 
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac  + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
-  
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
+
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
@@ -3392,13 +3381,13 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 11) {
 
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac  + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2 ;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac + " - Diciembre/" + anofac2;
 
-    
+
         }
         else if (localStorage.mesanterior == 10) {
 
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac;
 
             document.getElementById('valor2').disabled = true;
             document.getElementById('dato2').disabled = true;
@@ -3435,7 +3424,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 9) {
 
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac;
 
 
             document.getElementById('valor3').disabled = true;
@@ -3470,7 +3459,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac;
 
 
             document.getElementById('valor4').disabled = true;
@@ -3503,7 +3492,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac  + " - Agosto/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac + " - Agosto/" + anofac;
 
 
             document.getElementById('valor5').disabled = true;
@@ -3529,11 +3518,11 @@ function cambiomes() {
 
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
-            
+
 
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac  + " - Agosto/" + anofac + " - Julio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac;
 
 
             document.getElementById('valor6').disabled = true;
@@ -3559,7 +3548,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac  + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
 
             document.getElementById('valor7').disabled = true;
             document.getElementById('dato7').disabled = true;
@@ -3581,7 +3570,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac  + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
 
             document.getElementById('valor8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -3600,7 +3589,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac  + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
 
             document.getElementById('valor9').disabled = true;
             document.getElementById('dato9').disabled = true;
@@ -3617,7 +3606,7 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac  + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
 
             document.getElementById('valor10').disabled = true;
             document.getElementById('dato10').disabled = true;
@@ -3631,7 +3620,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac  + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Noviembre/" + anofac + " - Octubre/" + anofac + " - Septiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -3654,7 +3643,7 @@ function cambiomes() {
         mesfac11 = mesfac10 - 1
         mesfac12 = mesfac11 - 1
         anofac = localStorage.añoinicial
-        anofac2 = anofac -1
+        anofac2 = anofac - 1
 
         label1 = mesfac + "/" + anofac;
         label2 = mesfac2 + "/" + anofac;
@@ -3687,10 +3676,10 @@ function cambiomes() {
         localStorage.setItem("fec2", label2);
         localStorage.setItem("fec3", label3);
         localStorage.setItem("fec4", label4);
-        localStorage.setItem("fec5", label5);    
-        localStorage.setItem("fec6", label6);  
-        localStorage.setItem("fec7", label7); 
-        localStorage.setItem("fec8", label8);  
+        localStorage.setItem("fec5", label5);
+        localStorage.setItem("fec6", label6);
+        localStorage.setItem("fec7", label7);
+        localStorage.setItem("fec8", label8);
         localStorage.setItem("fec9", label9);
         localStorage.setItem("fec10", label10);
         localStorage.setItem("fec11", label11);
@@ -3699,13 +3688,13 @@ function cambiomes() {
 
         if (localStorage.mesanterior == 12) {
 
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
-                      
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac + " - Enero/" + anofac;
+
 
         }
         else if (localStorage.mesanterior == 11) {
 
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac;
 
             document.getElementById('valor2').disabled = true;
             document.getElementById('dato2').disabled = true;
@@ -3744,7 +3733,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 10) {
 
-            document.getElementById("mescomparacion").innerHTML =  "Diciembre/" + anofac  + " - Noviembre/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac;
 
 
             document.getElementById('valor3').disabled = true;
@@ -3780,7 +3769,7 @@ function cambiomes() {
         }
         else if (localStorage.mesanterior == 9) {
 
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac 
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac
 
 
             document.getElementById('valor4').disabled = true;
@@ -3811,7 +3800,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 8) {
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Octubre/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Octubre/" + anofac;
 
 
             document.getElementById('valor5').disabled = true;
@@ -3840,8 +3829,8 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 7) {
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Octubre/" + anofac; + " - Agosto/" + anofac;
-        
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Octubre/" + anofac; + " - Agosto/" + anofac;
+
 
             document.getElementById('valor6').disabled = true;
             document.getElementById('dato6').disabled = true;
@@ -3866,7 +3855,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 6) {
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac;
 
             document.getElementById('valor7').disabled = true;
             document.getElementById('dato7').disabled = true;
@@ -3888,7 +3877,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 5) {
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac;
 
             document.getElementById('valor8').disabled = true;
             document.getElementById('dato8').disabled = true;
@@ -3908,7 +3897,7 @@ function cambiomes() {
 
         }
         else if (localStorage.mesanterior == 4) {
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac;
 
 
             document.getElementById('valor9').disabled = true;
@@ -3924,7 +3913,7 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 3) {
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac;
 
 
             document.getElementById('valor10').disabled = true;
@@ -3938,7 +3927,7 @@ function cambiomes() {
         }
 
         else if (localStorage.mesanterior == 2) {
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac;
 
             document.getElementById('valor11').disabled = true;
             document.getElementById('dato11').disabled = true;
@@ -3947,8 +3936,8 @@ function cambiomes() {
             document.getElementById('dato12').disabled = true;
         }
         else if (localStorage.mesanterior == 1) {
-            document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;                   
-            
+            //document.getElementById("mescomparacion").innerHTML = "Diciembre/" + anofac + " - Noviembre/" + anofac + " - Setiembre/" + anofac + " - Agosto/" + anofac + " - Julio/" + anofac + " - Junio/" + anofac + " - Mayo/" + anofac + " - Abril/" + anofac + " - Marzo/" + anofac + " - Febrero/" + anofac;
+
             document.getElementById('valor12').disabled = true;
             document.getElementById('dato12').disabled = true;
         }
@@ -3964,21 +3953,19 @@ function cambiomes() {
 }
 
 
-function grafico(){
+function grafico() {
     var lecturahoy = document.getElementById('lecturahoy').value;
     localStorage.setItem("lecturaHoy", lecturahoy);
     window.location.replace('./grafico.html');
 }
 
 
-function mostrarGrafico(){
+function mostrarGrafico() {
 
     var TotalMeses = parseInt(localStorage.getItem("TotalMeses"));
     var lecturaB = parseInt(localStorage.getItem("lecturaB"));
     var lecturaA = parseInt(localStorage.getItem("lecturaA"));
     var lecturaHoy = parseInt(localStorage.getItem("lecturaHoy"));
-
- 
 
 
     var totalmesxb = lecturaB + TotalMeses;
@@ -3990,36 +3977,46 @@ function mostrarGrafico(){
     document.getElementById('llecturab').value = lecturaB;
     document.getElementById('llecturahoy').value = lecturaHoy;
 
-    
-    var maximoconsumo = Math.max(lecturaHoy, lecturaA , totalmesxb) +150;
-    var minimoconsumo = Math.min(lecturaHoy, lecturaA , totalmesxb) - 150;
 
-    var rango = (maximoconsumo - minimoconsumo)/5
+    var maximoconsumo = Math.max(lecturaHoy, lecturaA, totalmesxb) + 150;
+    var minimoconsumo = Math.min(lecturaHoy, lecturaA, totalmesxb) - 150;
 
+    var rango = (maximoconsumo - minimoconsumo) / 5
 
-    if ( lecturaA != totalmesxb) {
-        mensaje= document.getElementById("mensaje")
+    //Primera comparacion
+    if (lecturaA != totalmesxb) {
+        mensaje = document.getElementById("mensaje")
         mensaje.innerHTML = "Su calculo de consumo no es conforme";
         mensaje.style.color = "red";
     }
     else {
-        mensaje= document.getElementById("mensaje")
+        mensaje = document.getElementById("mensaje")
         mensaje.innerHTML = "Su calculo de consumo es conforme";
         mensaje.style.color = "blue";
 
     }
+    //Segunda comparacion
+    if (lecturaHoy > lecturaA && lecturaHoy > totalmesxb) {
+        mensaje2 = document.getElementById("mensaje2")
+        mensaje2.innerHTML = "Su calculo de consumo  es conforme";
+        mensaje2.style.color = "blue";
+    }
+    else {
+        mensaje = document.getElementById("mensaje2")
+        mensaje.innerHTML = "Su calculo es inconforme";
+        mensaje.style.color = "red";
+    }
 
-    
     var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: [localStorage.fec1 , localStorage.fec2, localStorage.fec3, localStorage.fec4, localStorage.fec5, localStorage.fec6, localStorage.fec7, localStorage.fec8,
-                localStorage.fec9, localStorage.fec10, localStorage.fec11, localStorage.fec12],
+            labels: [localStorage.fec1, localStorage.fec2, localStorage.fec3, localStorage.fec4, localStorage.fec5, localStorage.fec6, localStorage.fec7, localStorage.fec8,
+            localStorage.fec9, localStorage.fec10, localStorage.fec11, localStorage.fec12],
             datasets: [{
                 label: ' ',
                 data: [localStorage.valor1, localStorage.valor2, localStorage.valor3, localStorage.valor4, localStorage.valor5, localStorage.valor6, localStorage.valor7,
-                    localStorage.valor8, localStorage.valor9, localStorage.valor10, localStorage.valor11, localStorage.valor12],
+                localStorage.valor8, localStorage.valor9, localStorage.valor10, localStorage.valor11, localStorage.valor12],
                 backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
@@ -4054,74 +4051,74 @@ function mostrarGrafico(){
     let fecha = (f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
     console.log(fecha);
 
-   
+
 
     Chart.defaults.global.defaultFontSize = 12;
 
     var chartPluginLineaHorizontal = {
-        afterDraw: function(chartobj) {
-          if (chartobj.options.lineaHorizontal) {
-            var ctx = chartobj.chart.ctx;
-            var valorY = chartobj.scales["y-axis-0"].getPixelForValue(chartobj.options.lineaHorizontal);
-            ctx.beginPath();
-            ctx.moveTo(0, valorY);
-            ctx.lineTo(chartobj.chart.width, valorY);
-            ctx.strokeStyle = "red";
-            ctx.stroke();
-          }
+        afterDraw: function (chartobj) {
+            if (chartobj.options.lineaHorizontal) {
+                var ctx = chartobj.chart.ctx;
+                var valorY = chartobj.scales["y-axis-0"].getPixelForValue(chartobj.options.lineaHorizontal);
+                ctx.beginPath();
+                ctx.moveTo(0, valorY);
+                ctx.lineTo(chartobj.chart.width, valorY);
+                ctx.strokeStyle = "red";
+                ctx.stroke();
+            }
         }
-      }
-      Chart.pluginService.register(chartPluginLineaHorizontal);
+    }
+    Chart.pluginService.register(chartPluginLineaHorizontal);
 
 
 
-      var ctx1 = document.getElementById('myChart2');
-      var myChart2 = new Chart(ctx1, {
-          type: 'bar',
-          data: {
-              labels: [fecha, 'Lectura A', 'Consumo'],
-              datasets: [{
-                  label: ' ',
-                  data: [localStorage.lecturaHoy, localStorage.lecturaA, totalmesxb],
-                  backgroundColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 159, 64, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(153, 102, 255, 1)',
-                      'rgba(255, 206, 86, 1)'
-                  ],
-                  borderColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 159, 64, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(153, 102, 255, 1)',
-                      'rgba(255, 206, 86, 1)'
-                  ],
-                  borderWidth: 1
-              }]
-          },
-          options: 
-          {
-              lineaHorizontal: totalmesxb,
-              scales: {
-                  yAxes: [{
-                      ticks: {
-                          min: minimoconsumo,
-                          max: maximoconsumo,
-                          stepSize: rango
-                      },
-                  }]
-              }
-          }
-      });
+    var ctx1 = document.getElementById('myChart2');
+    var myChart2 = new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: [fecha, 'Lectura A', 'Consumo'],
+            datasets: [{
+                label: ' ',
+                data: [localStorage.lecturaHoy, localStorage.lecturaA, totalmesxb],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 206, 86, 1)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 206, 86, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options:
+        {
+            lineaHorizontal: totalmesxb,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: minimoconsumo,
+                        max: maximoconsumo,
+                        stepSize: rango
+                    },
+                }]
+            }
+        }
+    });
 
 
 }
 
-function nuevadata(){
-    
+function nuevadata() {
+
     localStorage.removeItem('mesinicial');
     localStorage.removeItem('añoinicial');
     localStorage.removeItem('mesanterior');
@@ -4150,7 +4147,7 @@ function nuevadata(){
     localStorage.removeItem('valor11');
     localStorage.removeItem('fec12');
     localStorage.removeItem('valor12');
-    localStorage.removeItem('TotalMeses');  
+    localStorage.removeItem('TotalMeses');
     localStorage.removeItem('lecturaA');
     localStorage.removeItem('lecturaB');
     localStorage.removeItem('lecturaHoy');
@@ -4159,68 +4156,68 @@ function nuevadata(){
 }
 
 
-function traermeses(){
+function traermeses() {
 
     var MesInicial1 = parseInt(localStorage.getItem("mesinicial"));
     var AnoInicial = (localStorage.getItem("añoinicial"));
     var anoanterior = (localStorage.getItem("anoanterior"));
     var MesAnterior1 = parseInt(localStorage.getItem("mesanterior"));
     console.log(MesInicial1);
-    switch(MesInicial1){
+    switch (MesInicial1) {
         case 1: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Enero" + "/" + AnoInicial;
-        break;
+            break;
         case 2: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Febrero" + "/" + AnoInicial;
-        break;
+            break;
         case 3: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Marzo" + "/" + AnoInicial;
-        break;
+            break;
         case 4: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Abril" + "/" + AnoInicial;
-        break;
+            break;
         case 5: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Mayo" + "/" + AnoInicial;
-        break;
+            break;
         case 6: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Junio" + "/" + AnoInicial;
-        break;
+            break;
         case 7: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Julio" + "/" + AnoInicial;
-        break;
+            break;
         case 8: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Agostro" + "/" + AnoInicial;
-        break;
+            break;
         case 9: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Septiembre" + "/" + AnoInicial;
-        break;
+            break;
         case 10: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Octubre" + "/" + AnoInicial;
-        break;
+            break;
         case 11: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Noviembre" + "/" + AnoInicial;
-        break;
+            break;
         case 12: document.getElementById('lcarultimo').innerHTML = "Recibo a completar es del mes: Diciembre" + "/" + AnoInicial;
         default: document.getElementById('lcarultimo').innerHTML = "Valor no ingresado correctamente";
 
     }
 
-    switch(MesAnterior1){
+    switch (MesAnterior1) {
         case 1: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Enero" + "/" + AnoInicial;
-        break;
+            break;
         case 2: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Febrero" + "/" + AnoInicial;
-        break;
+            break;
         case 3: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Marzo" + "/" + AnoInicial;
-        break;
+            break;
         case 4: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Abril" + "/" + AnoInicial;
-        break;
+            break;
         case 5: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Mayo" + "/" + AnoInicial;
-        break;
+            break;
         case 6: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Junio" + "/" + AnoInicial;
-        break;
+            break;
         case 7: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Julio" + "/" + AnoInicial;
-        break;
+            break;
         case 8: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Agostro" + "/" + AnoInicial;
-        break;
+            break;
         case 9: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Septiembre" + "/" + AnoInicial;
-        break;
+            break;
         case 10: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Octubre" + "/" + AnoInicial;
-        break;
+            break;
         case 11: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Noviembre" + "/" + AnoInicial;
-        break;
+            break;
         case 12: document.getElementById('lcarcomparar').innerHTML = "Recibo a completar es del mes: Diciembre" + "/" + AnoInicial;
         default: document.getElementById('lcarcomparar').innerHTML = "Valor no ingresado correctamente";
 
     }
 
-   
+
 }
